@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+        body {
+           background-size: cover;
+           font-family: Arial, sans-serif;
+           background: linear-gradient(blue,green,yellow);
+        }
+        
+        form {
+           background-color: rgba(255, 255, 255, 0.5);
+           padding: 20px;
+           max-width: 600px;
+           margin: 0 auto;
+           border-radius: 5px;
+        }
+        
+        h1 {
+           color:white;
+
+        }
+        
+        label {
+           color: #4B0082;
+        }
+        
+        input[type="text"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="number"],
+        input[type="email"],
+        input[type="password"] {
+           background-color: #ffffff;
+           color: #4B0082;
+           border: 2px solid #4B0082;
+           padding: 10px;
+           margin-bottom: 10px;
+           border-radius: 5px;
+        }
+        
+        input[type="submit"],
+        input[type="reset"] {
+           background-color: #4B0082;
+           color: #ffffff;
+           border: none;
+           padding: 10px 20px;
+           cursor: pointer;
+           margin-top: 10px;
+           border-radius: 5px;
+        }
+        
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+           background-color: #8B00C8;
+        }
+        </style>
+        </head> 
+    <body>
+        <center><h1>
+           Registration Form
+        </h1></center>
+        <form>
+            <label for = "FName">First Name:</label>
+            <input type="text" id="FName" placeholder="Enter your first name"required><br><br>
+            <label for = "LName">Last Name:</label>
+            <input type="text" id="LName" placeholder="Enter your last name"required><br><br>
+            <label for="Dob">Dob:</label>
+            <input type="date" id="Dob" required/><br>
+            <p style="color:#4B0082;">Gender:</p>
+            <input type="radio" id="Male" name="Gender" required/>
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="Gender" required/>
+            <label for="Female">Female</label>
+            <input type="radio" id="others" name="Gender" required/>
+            <label for="others">Others</label><br><br>
+            <label for="Number">Mobile number:</label>
+            <input type="tel" id="Number" placeholder="+91 1234567890" required/><br><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter age " required/><br><br>
+            <label for="qualification">Qualificaton:</label>
+            <select name="qualification" id="qualification" required>
+                <option>Choose</option>
+                <option>Schooling</option>
+                <option>UG(Under graduate)</option>
+                <option>PG(Post graduate)</option>
+                <option>Working</option>
+            </select><br><br>
+            <label for="add">Address:</label><br>
+            <textarea id="msg" id="add" name="address" rows="5" cols="10" placeholder="Enter your full address" required></textarea><br><br>
+            <label for="mail" >Email:</label>
+            <input type="email" id="mail" placeholder="abc@gmail.com" required/><br><br>
+            <label for="pass">Password </label>
+            <input type="password" id="pass" placeholder="Enter your password"required/><br><br>
+            <label for="pass">Confirm Password </label>
+            <input type="password" id="pass" placeholder="Re-enter your password"required/><br><br>
+            <label for="course">Select course:</label><br>
+            <input type="checkbox" id="1" value="C">
+            <label for="1">C</label><br>
+            <input type="checkbox" id="2" value="C">
+            <label for="2">C++</label><br>
+            <input type="checkbox" id="3" value="C">
+            <label for="3">Java</label><br>
+            <input type="checkbox" id="4" value="C">
+            <label for="4">Python</label><br>
+            <p style="color:#4B0082">Upload proof:</p>
+            <input type="file" name="idcard" accpect="img/text" required><br>
+            <input type="submit" id="submit"/>
+            <input type="reset" id="reset"/>
+
+        </form>
+    </body>
+</html>
